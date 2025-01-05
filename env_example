@@ -1,0 +1,6 @@
+PUID=1000
+PGID=1000
+MEDIA_PATH=/storage/media
+CONFIG_PATH=/store/configs
+CLOUDFLARE_TUNNEL_TOKEN=
+TZ=Europe/Brussels
