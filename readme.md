@@ -15,26 +15,26 @@ graph TD
     User([End User])
 
     %% -- Ingress/Access Layer --
-    HP(Homepage<br/>Dashboard)
-    CF{Cloudflared<br/>Tunnel}
+    HP("Homepage<br/>Dashboard")
+    CF{"Cloudflared<br/>Tunnel"}
 
     %% -- Request/Discovery Layer --
-    JS(Jellyseerr<br/>Requests)
+    JS("Jellyseerr<br/>Requests")
 
     %% -- Management Layer ("The Arrs") --
-    Arrs(Media Managers<br/>Sonarr | Radarr | Readarr)
-    B(Bazarr<br/>Subtitles)
-    Rec((Recyclarr<br/>Configs))
+    Arrs("Media Managers<br/>Sonarr, Radarr, Readarr")
+    B("Bazarr<br/>Subtitles")
+    Rec(("Recyclarr<br/>Configs"))
 
     %% -- Download Layer --
-    qB[qBittorrent<br/>Downloader]
-    P(Prowlarr +<br/>FlareSolverr)
+    qB["qBittorrent<br/>Downloader"]
+    P("Prowlarr +<br/>FlareSolverr")
 
     %% -- Storage Layer --
-    Media[(Shared Volume<br/>${MEDIA_PATH})]
+    Media[("Shared Volume<br/>${MEDIA_PATH}")]
 
     %% -- Consumption Layer --
-    Players(Media Players<br/>Jellyfin | Audiobookshelf)
+    Players("Media Players<br/>Jellyfin, Audiobookshelf")
 
 
     %% ==========================================
