@@ -47,7 +47,7 @@ graph TD
 
     %% File System / Storage (Shared Volumes)
     subgraph Storage [Shared Docker Volumes]
-        Media[( ${MEDIA_PATH} )]
+        Media[("${MEDIA_PATH}")]
     end
 
     %% Storage Interactions
